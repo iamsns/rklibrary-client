@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:4044",
+  "proxy": "https://rk-library-backend.onrender.com",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
