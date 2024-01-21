@@ -1,0 +1,11 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js",
+  "/book-categories": "pages/book-categories.js",
+  "/contact-us": "pages/contact-us.js",
+  "/about-us": "pages/about-us.js",
+  "/issue-books": "pages/issue-books.js",
+  "/books": "pages/books.js"
+}
