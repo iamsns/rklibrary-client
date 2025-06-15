@@ -1,5 +1,5 @@
 import React from "react";
-import Welcome from "./components/welcome/index";
+import Welcome from "./components/Welcome/index";
 import Wrapper from "./styled";
 const Home = () => {
   return (

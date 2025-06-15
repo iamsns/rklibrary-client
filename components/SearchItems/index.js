@@ -5,8 +5,8 @@ import { bindActionCreators } from 'redux';
 
 import BookList from "../../shared/BookList";
 import Wrapper from "../../shared/BookList/styled";
-import { getBooksRequest } from "../Books/Redux/actions";
-import { selectBooks } from "../Books/Redux/selectors";
+import { getBooksRequest } from "../Books/redux/actions";
+import { selectBooks } from "../Books/redux/selectors";
 
 const Index = (props) => {
   React.useEffect(() => {

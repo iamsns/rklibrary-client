@@ -6,7 +6,7 @@ import { bindActionCreators } from 'redux';
 import BookList from "../../shared/BookList";
 import Wrapper from "../../shared/BookList/styled";
 import { getBooksRequest } from "../../components/Books/redux/actions";
-import { selectBooks } from "../Books/Redux/selectors";
+import { selectBooks } from "../Books/redux/selectors";
 import { selectUserDetails } from "../Auth/redux/selectors";
 
 const Index = (props) => {
