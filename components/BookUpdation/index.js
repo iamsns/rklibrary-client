@@ -17,7 +17,7 @@ const AddBook = () => {
     padding: "med"
   }
   React.useEffect(() => {
-    AuthService.getJsonData("/get-categories")
+    AuthService.getJsonData("get-categories")
       .then((res) => {
         // console.log(res);
         if (res.status == 200) {
@@ -35,7 +35,7 @@ const AddBook = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // console.log("bookDatasubmit", bookData);
-    AuthService.postJsonData('/edit-book', bookData).then(res => {
+    AuthService.postJsonData('edit-book', bookData).then(res => {
       // console.log(res)
       if (res.status == 201) {
         router.push('/')
@@ -110,7 +110,7 @@ const AddBook = () => {
             <div className="cat-div">
 
               {categories?.map((category, index) => {
-                return <span style={{ marginRight: '10px', cursor: 'pointer' }}><input name="categories" style={{ marginRight: '7px', cursor: 'pointer' }} type="checkbox" id={category?.id} value={category?.id} onChange={handleChange} />
+                return <span key={index} style={{ marginRight: '10px', cursor: 'pointer' }}><input name="categories" style={{ marginRight: '7px', cursor: 'pointer' }} type="checkbox" id={category?.id} value={category?.id} onChange={handleChange} />
                   <label style={{ cursor: 'pointer' }} for={category?.id}> {category?.name}</label></span>
                 {/* return <option key={index} value={category?.id}>{category?.name}</option> */ }
               })}

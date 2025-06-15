@@ -6,7 +6,7 @@ import AuthService from '../../../services/authService';
 
 function* getBookDetails(data) {
   try {
-    const response = yield call(AuthService.getJsonData, `/book/${data.payload}`)
+    const response = yield call(AuthService.getJsonData, `book/${data.payload}`)
     // console.log("response", response)
     if (response?.status == 200) {
       yield put(actions.getBookDetailsSuccess(response?.data?.data));

@@ -34,8 +34,8 @@ export function issueNewBookRequest(payload) {
   
   export function issueNewBookSuccess(payload) {
     // console.log("issueNewBookSuccess", payload);
-    const router = useRouter()
-    router.push('/issue-books')
+    // const router = useRouter()
+    // router.push('/issue-books')
     return {
       type: actionTypes.ISSUE_NEW_BOOK_SUCCESS,
       payload,

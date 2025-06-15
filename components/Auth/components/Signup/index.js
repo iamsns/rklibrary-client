@@ -89,7 +89,7 @@ const Signup = (props) => {
             </button>
           </div>
         </form>
-        <div className="privacy-note">By creating an account, I declare that I have read and accepted Rk library's Terms of Use and Privacy Policy .</div>
+        <div className="privacy-note">{`By creating an account, I declare that I have read and accepted Rk library's Terms of Use and Privacy Policy .`}</div>
         <div className="bottom-links"><p>Have an account? <Link className="login-link" href="/login">Login</Link></p>
         </div>
       </div>

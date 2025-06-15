@@ -3,20 +3,20 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { Wrapper } from './styled'
 import AuthService from '../../../services/authService';
-import cogoToast from 'cogo-toast';
+import toast from 'react-hot-toast';
 
 function ContactForm(props) {
     const [formData, setFormData] = useState({})
     const handleSubmit = (e) => {
         e.preventDefault();
-        AuthService.postJsonData('/contact-us', formData).then(res => {
+        AuthService.postJsonData('contact-us', formData).then(res => {
             if (res.data.status == 201) {
-                cogoToast.success("Your query is successfully submitted.")
+                toast.success("Your query is successfully submitted.")
                 setFormData({})
                 props.handleClose()
             } else if (res.data.status == 422) {
                 console.log(res.data.errors);
-                cogoToast.error(hasErrors(res.data.errors))
+                toast.error(hasErrors(res.data.errors))
             }
         }).catch(err => {
             console.log('error is contact us form', err)
