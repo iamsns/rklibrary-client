@@ -1,0 +1,4 @@
+export const GET_BOOK_DETAILS_REQUEST = 'rklibrary/books/GET_BOOKDETAILS_REQUEST'
+export const GET_BOOK_DETAILS_SUCCESS = 'rklibrary/books/GET_BOOKDETAILS_SUCCESS'
+export const GET_BOOK_DETAILS_ERROR = 'rklibrary/books/GET_BOOKDETAILS_ERROR'
+
